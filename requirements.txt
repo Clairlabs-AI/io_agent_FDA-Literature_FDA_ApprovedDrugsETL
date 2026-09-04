@@ -1,0 +1,17 @@
+# Runtime, both regions
+pandas>=2.0
+requests>=2.31
+boto3>=1.28
+
+# EU: reads the EMA workbook
+openpyxl>=3.1
+
+# US: the FDA approvals page needs browser-like TLS, and lxml to parse
+curl_cffi>=0.6
+lxml>=5.0
+
+# Both: label PDFs
+pymupdf>=1.24
+
+# Development only
+pyflakes

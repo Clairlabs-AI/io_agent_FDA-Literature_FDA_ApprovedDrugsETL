@@ -1,0 +1,23 @@
+# Local environment
+.venv/
+.idea/
+__pycache__/
+*.pyc
+
+# Anything the pipeline produces
+data/
+dist/
+scripts/
+*.bak
+*_headers_before.txt
+*_headers_after.txt
+*_report.xlsx
+
+# Deployment values (bucket, SNS topic). Copy deploy.env.example and fill it in.
+config_handler/deploy.env
+
+# Prebuilt wheels are uploaded to S3, not stored in the repo
+common_packages/wheels/*.whl
+
+# Sample labels used while testing
+*.pdf
